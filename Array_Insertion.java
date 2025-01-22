@@ -20,8 +20,17 @@ public class Array_Insertion {
         e=sc.nextInt();
         arrayInsert(arr,p,e,len);
     }
-    static void arrayInsert()
+    static void arrayInsert(int arr[],int p,int e,int len)
     {
-    //TYPE OF CODE HERE
+    for(int i=len-1;i>=p-1;i--)
+    {
+    arr[i+1]=arr[i];
+    }
+    arr[p-1]=e;
+    System.out.println("After inserting ");
+    System.out.println("Length of the array :"+(len+1));
+    for(int i=0;i<len+1;i++){
+    System.out.println("arr["+i+"]=" + arr[i]);
+    }
     }
 }
