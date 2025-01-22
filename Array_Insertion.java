@@ -20,7 +20,7 @@ public class Array_Insertion {
         e=sc.nextInt();
         arrayInsert(arr,p,e,len);
     }
-    static void arrayInsert(int arr[],int p,int e,int len)
+     static void arrayInsert(int arr[],int p,int e,int len)
     {
     for(int i=len-1;i>=p-1;i--)
     {
